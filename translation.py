@@ -1,13 +1,13 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import BASE_SITE
 
-START_MESSAGE = '''Hello, {}
+START_MESSAGE = '''**Hello, {}
 
 I'm a Bot to Short Other Links to %s Links by Using your API. 
 
 Just Send me Any Post with Other Links. I will Convert Those Links Using Your API and Send them Back To You
 
-Hit /help for more information about this Bot
+Hit /help for more information about this Bot**
 ''' % BASE_SITE
 
 
