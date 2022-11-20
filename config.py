@@ -9,17 +9,17 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID"))
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")
+API_ID = int(os.environ.get("API_ID", 29013102))
+API_HASH = os.environ.get("API_HASH", '6525d7b0bbda6e9369db2ee3c7cf7e09')
+BOT_TOKEN = os.environ.get("BOT_TOKEN", '5651556643:AAGMIUjdIIe7PhOsX641t2t13JzcRT05I_U')
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
-OWNER_ID = int(os.environ.get("OWNER_ID", "0"))
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "shortener")
-DATABASE_URL = os.environ.get("DATABASE_URL", None)
+OWNER_ID = int(os.environ.get("OWNER_ID", "5232827456"))
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "Shortener")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://krownlinks:DpQJbwSgU1p2T2KC@cluster0.9q7q0qj.mongodb.net/?retryWrites=true&w=majority")
 # Optionnal variables
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
-BIN_CHANNEL = os.environ.get("BIN_CHANNEL", None)
+BIN_CHANNEL = os.environ.get("BIN_CHANNEL", -1001683747348)
 #  Replit Config
 REPLIT_USERNAME = os.environ.get("REPLIT_USERNAME", None)
 REPLIT_APP_NAME = os.environ.get("REPLIT_APP_NAME", None)
@@ -29,4 +29,3 @@ BASE_SITE = "krownlinks.com"
 
 if OWNER_ID not in ADMINS:
     ADMINS.append(OWNER_ID)
-
