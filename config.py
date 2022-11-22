@@ -11,11 +11,11 @@ def is_enabled(value, default):
 # Mandatory variables for the bot to start
 API_ID = int(os.environ.get("API_ID", 29013102))
 API_HASH = os.environ.get("API_HASH", '6525d7b0bbda6e9369db2ee3c7cf7e09')
-BOT_TOKEN = os.environ.get("BOT_TOKEN", '5651556643:AAGMIUjdIIe7PhOsX641t2t13JzcRT05I_U')
+BOT_TOKEN = os.environ.get("BOT_TOKEN", '5947068251:AAG3jPQFy7wdkh0vJa_7EkUX-FwKIaK_hjs')
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
 OWNER_ID = int(os.environ.get("OWNER_ID", "5232827456"))
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Shortener")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://krownlinks:DpQJbwSgU1p2T2KC@cluster0.9q7q0qj.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://shortingly:154gS9u6XUWAjjp8@cluster0.l7rss4b.mongodb.net/?retryWrites=true&w=majority")
 # Optionnal variables
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
