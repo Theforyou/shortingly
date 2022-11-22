@@ -19,7 +19,7 @@ DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://shortingly:154gS9u6
 # Optionnal variables
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
-BIN_CHANNEL = os.environ.get("BIN_CHANNEL", -1001683747348)
+BIN_CHANNEL = os.environ.get("BIN_CHANNEL", -1001879609154)
 #  Replit Config
 REPLIT_USERNAME = os.environ.get("REPLIT_USERNAME", None)
 REPLIT_APP_NAME = os.environ.get("REPLIT_APP_NAME", None)
