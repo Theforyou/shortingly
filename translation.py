@@ -1,15 +1,27 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import BASE_SITE
 
-START_MESSAGE = '''**Hello, {}
+START_MESSAGE = '''😎**Hello, {}
 
-I'm a Bot to Short Other Links to %s Links by Using your API. 
+I Am %s , Bulk Link Converter Bot. I Can Convert Links Directly From Your gyanilinks.com Account,
 
 Just Send me Any Post with Other Links. I will Convert Those Links Using Your API and Send them Back To You
 
-Hit /help for more information about this Bot**
-''' % BASE_SITE
+1. Go To 👉 https://gyanilinks.com/member/tools/api
 
+2. Than Copy API Key
+
+3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
+/shortener_api(space)API Key
+(See Example.👇)
+Example: `/shortener_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4`
+
+💁‍♀️ Hit 👉 /help To Get Help.
+
+➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
+
+➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
+''' % BASE_SITE
 
 HELP_MESSAGE = '''
 Hey! My name is {firstname}. I am a Link Shortener Bot, here to make your Work Easy and Help you to Earn more
@@ -55,7 +67,7 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('Home', callback_data='start_command'), InlineKeyboardButton('Help', callback_data='help_command')], [InlineKeyboardButton('Close', callback_data='delete')]])
 
 
-START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('Connect', url=f'https://{BASE_SITE}/member/tools/api'), InlineKeyboardButton('Help', callback_data='help_command')], [InlineKeyboardButton('About', callback_data='about_command'), InlineKeyboardButton('Close', callback_data='delete')]])
+START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('↗️Connect', url=f'https://{BASE_SITE}/member/tools/api'), InlineKeyboardButton('⚙️Help', callback_data='help_command')], [InlineKeyboardButton('🧑‍💻About', callback_data='about_command'), InlineKeyboardButton('❌Close', callback_data='delete')]])
 
 
 
